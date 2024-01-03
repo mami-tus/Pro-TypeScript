@@ -1,4 +1,4 @@
-function repeatHello(count): string {
+function repeatHello(count: number): string {
   return 'hello'.repeat(count);
 }
 
