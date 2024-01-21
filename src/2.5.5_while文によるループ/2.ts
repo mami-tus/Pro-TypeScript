@@ -1,7 +1,10 @@
 export let sum = 0;
 export let i = 1;
 
-while (i <= 100) {
+while (true) {
+  if (i > 100) {
+    break;
+  }
   sum += i;
   i++;
 }
