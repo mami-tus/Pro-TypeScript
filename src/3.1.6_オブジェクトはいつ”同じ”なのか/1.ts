@@ -2,7 +2,7 @@ export const foo = { num: 1234 };
 export const bar = foo;
 console.log(bar.num); // 1234
 bar.num = 0;
-console.log(bar.num); // 0
+console.log(foo.num); // 0
 // オブジェクトは「明示的にコピーしなければ同じである」
 // オブジェクトを別の変数に代入した場合、オブジェクトをコピーしていないので同じオブジェクトが複数の変数に代入されていることになる
 // そのため、どちらかの変数でオブジェクトを変更すると、もう一方の変数でも同じ変更が反映される
