@@ -1,3 +1,4 @@
+// 宣言された型のプロパティを全てもつオブジェクト
 export const obj: {
   foo: number;
   bar: string;
