@@ -15,3 +15,8 @@ export const obj2: MyObj = {
 };
 console.log(obj.baz); // undefined
 console.log(obj2.baz); // 1234
+// エラー：TS18048: 'obj2.baz' is possibly 'undefined'.
+// console.log(obj2.baz * 1000);
+if (obj2.baz !== undefined) {
+  console.log(obj2.baz * 1000); // これはエラーにならない
+}
