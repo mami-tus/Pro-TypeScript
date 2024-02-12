@@ -13,3 +13,5 @@ export const obj2: MyObj = {
   bar: false,
   baz: 1234,
 };
+console.log(obj.baz); // undefined
+console.log(obj2.baz); // 1234
