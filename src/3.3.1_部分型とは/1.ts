@@ -9,10 +9,10 @@ type FoobarBaz = {
   baz: boolean;
 };
 
-const obj: FoobarBaz = {
+export const obj: FoobarBaz = {
   foo: 'hi',
   bar: 1,
   baz: false,
 };
 // FooBarBazがFooBarの部分型であるためエラーにならない
-const obj2: FooBar = obj;
+export const obj2: FooBar = obj;
