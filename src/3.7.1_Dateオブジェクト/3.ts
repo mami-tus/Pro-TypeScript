@@ -4,4 +4,5 @@ console.log(timeNum); // 1580709600000
 
 export const date2 = new Date(timeNum);
 console.log(date2); // 2020-02-03T06:00:00.000Z
-// TODO: ↑がなぜUTCになるのか調べる
+
+console.log(Date.now()); // new Date().getTime()と同じ
