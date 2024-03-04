@@ -1,5 +1,5 @@
 // これらはOK
-let val: {} = 123;
+export let val: {} = 123;
 val = 'foobar';
 val = { num: 1234 };
 // これらはコンパイルエラー
