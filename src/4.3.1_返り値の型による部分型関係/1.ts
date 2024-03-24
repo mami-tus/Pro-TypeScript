@@ -14,3 +14,4 @@ export const fromAge = (age: number): HasNameAndAge => ({
 
 export const f: (age: number) => HasName = fromAge;
 export const obj: HasName = f(100);
+console.log(obj); // { name: 'John Smith', age: 100 }
