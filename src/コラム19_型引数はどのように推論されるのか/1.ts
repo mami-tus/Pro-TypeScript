@@ -1,4 +1,4 @@
-function makeTriple<T>(x: T, y: T, z: T): T[] {
+export function makeTriple<T>(x: T, y: T, z: T): T[] {
   return [x, y, z];
 }
 // string[]型となる
