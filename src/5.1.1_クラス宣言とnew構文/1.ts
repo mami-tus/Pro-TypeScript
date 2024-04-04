@@ -1,7 +1,7 @@
 // error TS2449: Class 'User' used before its declaration.
 // export const uhyo_error = new User();
 
-class User {
+export class User {
   name: string = '';
   age: number = 0;
 }
