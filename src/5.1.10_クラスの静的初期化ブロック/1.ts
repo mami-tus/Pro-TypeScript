@@ -1,5 +1,5 @@
 console.log('Hello');
-class C {
+export class C {
   static {
     console.log('uhyo');
   }
