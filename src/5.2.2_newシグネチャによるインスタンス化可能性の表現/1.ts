@@ -5,6 +5,11 @@ export class User {
 
 export type MyUserConstructor = new () => User;
 
+// newシグネチャで書き換え
+// export type MyUserConstructor = {
+//   new (): User;
+// };
+
 // UserはMyUserConstructor型を持つ
 export const MyUser: MyUserConstructor = User;
 // MyUserはnewで使用可能
