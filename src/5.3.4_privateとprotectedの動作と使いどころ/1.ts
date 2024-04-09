@@ -15,6 +15,6 @@ export class User {
 export class PremiumUser extends User {
   // public isAdult(): boolean {
   //   // error TS18013: Property '#age' is not accessible outside class 'User' because it has a private identifier.
-  //   return this.#age >= 20;
+  //   return this.#age >= 10;
   // }
 }
