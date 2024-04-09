@@ -13,7 +13,7 @@ export class User {
 }
 
 export class PremiumUser extends User {
-  rank: number = 1;
+  rank: number;
 
   constructor(name: string, age: number, rank: number) {
     super(name, age);

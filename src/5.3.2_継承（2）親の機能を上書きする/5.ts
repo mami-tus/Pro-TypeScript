@@ -13,10 +13,11 @@ export class User {
 }
 
 export class PremiumUser extends User {
-  rank: number;
+  // rank: number;
 
-  constructor(name: string, rank: number) {
-    super(name, 100);
-    this.rank = rank;
+  constructor(name: string, age: number, rank: number) {
+    // error TS17009: 'super' must be called before accessing 'this' in the constructor of a derived class.
+    // this.rank = rank;
+    super(name, age);
   }
 }
