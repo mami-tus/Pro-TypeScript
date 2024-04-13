@@ -2,7 +2,7 @@ console.log('エラーを発生させます');
 throwError();
 console.log('エラーを発生させました');
 
-function throwError() {
+export function throwError() {
   const error = new Error('エラーが発生しました！！！！！'); // 文字列がエラーメッセージになる
   throw error;
 }
