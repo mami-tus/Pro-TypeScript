@@ -16,3 +16,10 @@ export const uhyo: Human = {
   age: 26,
   name: 'uhyo',
 };
+
+// Human型は次と同義
+// export type Human = {
+//   species: string;
+//   age: number;
+//   name: string;
+// };
