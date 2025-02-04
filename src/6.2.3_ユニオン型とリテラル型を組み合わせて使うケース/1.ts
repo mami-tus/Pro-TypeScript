@@ -1,4 +1,4 @@
-function signNumber(type: 'plus' | 'minus') {
+export function signNumber(type: 'plus' | 'minus') {
   return type === 'plus' ? 1 : -1;
 }
 
