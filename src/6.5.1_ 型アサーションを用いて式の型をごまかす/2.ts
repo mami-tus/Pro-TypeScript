@@ -8,13 +8,13 @@ export type Human = {
 };
 export type User = Animal | Human;
 
-export function getNmaesIfAllHuman(
+export function getNamesIfAllHuman(
   users: readonly User[]
 ): string[] | undefined {
   if (users.every((user) => user.tag === 'human')) {
     // error TS2339: Property 'name' does not exist on type 'User'.
     // Property 'name' does not exist on type 'Animal'.
-    return users.map((user) => user.name);
+    return (users as Human[]).map((user) => user.name);
   }
   return undefined;
 }
