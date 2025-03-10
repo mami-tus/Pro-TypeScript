@@ -1,14 +1,18 @@
-export function doNothing(val: unknown) {
-  console.log(val);
+// toStringを持つ値の型
+export type HasToString = {
+  toString: () => string;
+};
+
+export function useToString1(value: HasToString) {
+  console.log(`value is ${value.toString()}`);
 }
 
-// doNothingにはどんな値でも渡すことができる
-doNothing(3);
-doNothing({
-  user: {
-    name: 'uhyo',
+// "value is foo!"と表示される
+useToString1({
+  toString() {
+    return 'foo!';
   },
 });
-doNothing(() => {
-  console.log('uhyo');
-});
+
+//"value is 3.14"と表示される
+useToString1(3.14);
