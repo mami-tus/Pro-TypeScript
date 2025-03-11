@@ -1,13 +1,12 @@
-export function useUnknown(val: unknown) {
-  if (typeof val === 'string') {
-    // 型の絞り込みによりここではvalはstring型
-    console.log('valは文字列です');
-    console.log(val.slice(0, 5));
-  } else {
-    console.log('valは文字列以外の何かです');
-    console.log(val);
-  }
+export function useNever(value: never) {
+  // never型はどんな型にも当てはめることができる
+  const num: never = value;
+  const str: never = value;
+  const obj: never = value;
+  console.log(`value is ${value}`);
 }
 
-useUnknown('foobar');
-useUnknown(null);
+// Argument of type '{}' is not assignable to parameter of type 'never'.ts(2345)
+// useNever({})
+// Argument of type '3.14' is not assignable to parameter of type 'never'.ts(2345)
+// useNever(3.14);
