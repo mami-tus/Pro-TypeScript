@@ -1,8 +1,8 @@
 export function useNever(value: never) {
   // never型はどんな型にも当てはめることができる
-  const num: never = value;
-  const str: never = value;
-  const obj: never = value;
+  const num: number = value;
+  const str: string = value;
+  const obj: object = value;
   console.log(`value is ${value}`);
 }
 
