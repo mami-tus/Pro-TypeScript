@@ -11,3 +11,17 @@ export type T = Pick<
   },
   'age'
 >;
+
+/**
+ * T1 は
+ * type T1 = {
+ *   age: number;
+ * };
+ */
+export type T2 = Omit<
+  {
+    name: string;
+    age: number;
+  },
+  'name'
+>;
