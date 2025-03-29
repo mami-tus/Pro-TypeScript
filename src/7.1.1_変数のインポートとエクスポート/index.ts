@@ -1,2 +1,2 @@
-import { name, age } from './uhyo.js';
-console.log(`uhyoの名前は${name}で年齢は${age}です`);
+import { uhyoName, age as uhyoAge } from './uhyo.js';
+console.log(`uhyoの名前は${uhyoName}で年齢は${uhyoAge}です`);
