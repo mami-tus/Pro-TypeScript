@@ -99,6 +99,7 @@
     "skipLibCheck": true /* Skip type checking all .d.ts files. */
   },
   "include": [
-    "./src/**/*.ts"
+    "./src/**/*.ts",
+    "src/8.2.1_コールバック関数とは/filename.tt"
   ],
 }
