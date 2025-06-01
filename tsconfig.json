@@ -102,4 +102,7 @@
     "./src/**/*.ts",
     "src/8.2.1_コールバック関数とは/filename.tt"
   ],
+  "exclude": [
+    "./src/__test__/**/*.ts"
+  ]
 }
